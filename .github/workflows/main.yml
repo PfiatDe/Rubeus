@@ -16,7 +16,7 @@ jobs:
            cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
            .\MSBuild.exe $Env:GITHUB_WORKSPACE\Rubeus.sln
            cd $Env:GITHUB_WORKSPACE\
-      - run :
+      - run : |
            git config --global user.name 'pfiadde'
            git config --global user.email 'pfiatde@users.noreply.github.com'
            ls
