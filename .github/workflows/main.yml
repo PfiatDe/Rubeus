@@ -16,6 +16,8 @@ jobs:
            cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
            .\MSBuild.exe $Env:GITHUB_WORKSPACE\Rubeus.sln
            cd $Env:GITHUB_WORKSPACE\
+           git config --global user.name 'pfiadde'
+           git config --global user.email 'pfiatde@users.noreply.github.com'
            git commit -am "Automated build"
            git push
    
