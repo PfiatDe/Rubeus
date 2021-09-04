@@ -18,6 +18,8 @@ jobs:
            cd $Env:GITHUB_WORKSPACE\
            git config --global user.name 'pfiadde'
            git config --global user.email 'pfiatde@users.noreply.github.com'
+           ls
+           git status
            git add *
            git commit -am "Automated build"
            git push
